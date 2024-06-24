@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- For social media icons-->
+    <style>
+        /* General styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #c3b091;
+            color: #333;
+        }
+
+        /* Header styling */
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            opacity: 0;
+            animation: fadeIn 1s ease forwards;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #836953; /* Light brown color */
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Section styling */
+        section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        section h2 {
+            font-size: 2em;
+            color: #836953; /* Light brown color */
+        }
+
+        .Contact-icons {
+            margin-top: 30px;
+        }
+
+        .Contact-icons a {
+            margin: 0 10px;
+            display: inline-block;
+            text-decoration: none;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .Contact-icons a img {
+            border-radius: 50%; /* Round shape for the icons */
+        }
+
+        .Contact-icons a:hover {
+            transform: scale(1.2); /* Scale up on hover */
+        }
+
+        /* Table styling */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: #f5deb3; /* Earthy tone background color */
+            border-radius: 10px;
+            overflow: hidden;
+            opacity: 0;
+            animation: fadeIn 1s ease forwards;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #d2b48c; /* Darker earthy tone for table headers */
+            color: #fff; /* White text color */
+        }
+
+        td {
+            font-size: 1.1em;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Keyframe animation for fade-in effect */
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+       <center><ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hobby.html">Hobby</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="life update.html">Life Update</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul></center> 
+    </nav>
+
+    <header>
+        <h1>Get In Touch &#10083;&#65039;</h1>
+        <p>While I'm not as active on Instagram these days, you can still follow me there for occasional updates. Lately, I've been spending a lot of time on TikTok, where I love sharing funny videos, educational content, and motivational clips with my friends. Twitter is my go-to platform for staying updated on the latest news and current events happening around the world. As for Pinterest, I often browse for inspiration, whether it's for outfit ideas, food recipes, or book recommendations to post on Instagram. Feel free to connect with me on any of these platforms!</p>
+    </header>
+
+    <section>
+        <hr size="3" color="#836953" width="100%">
+        <h2>Contact Me</h2>
+        <div class="Contact-icons">
+            <a href="https://www.instagram.com/rnafayne/"><img src="instagram.icon.jpg" alt="Instagram" height="55" width="55"></a>
+            <a href="https://x.com/rnafayne"><img src="twt.icon.jpg" alt="Twitter" height="55" width="55"></a>
+            <a href="https://www.tiktok.com/@rnafayne"><img src="tiktok.iconn.jpg" alt="TikTok" height="55" width="55"></a>
+            <a href="https://www.pinterest.com/ainaafrina1404/"><img src="pinterest.icon.jpg" alt="Pinterest" height="55" width="55"></a>
+            <a href="https://open.spotify.com/user/31uzelaa3g7p76kxbq7ppq4f3mqq"><img src="spotify.iconnn.jpg" alt="Spotify" height="55" width="55"></a>
+        </div>
+        <hr size="3" color="#836953" width="100%">
+
+        <!-- Round Table for Contact Information -->
+        <table>
+            <tr>
+                <th colspan="2">Contact Information</th>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td>Aina Afrina binti Mazhar</td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td>ainaafrina1404@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Phone:</td>
+                <td>+60 1110285180</td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aina Afrina. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript to trigger the fade-in animation when the page is fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.querySelector('header');
+            const table = document.querySelector('table');
+            
+            // Triggering the animation after a slight delay to ensure all elements are loaded
+            setTimeout(function() {
+                header.style.opacity = '1';
+                table.style.opacity = '1';
+            }, 100);
+        });
+    </script>
+</body>
+</html>

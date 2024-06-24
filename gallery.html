@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Aina Afrina</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #c3b091;
+            color: #333;
+        }
+
+        /* Centering content */
+        .center {
+            text-align: center;
+        }
+
+        /* Header styling */
+        header {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #836953; /* Light brown color */
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Navigation styling */
+        nav {
+            background-color: #836953; /* Light brown background for navigation */
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff; /* White color for navigation links */
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #c3b091; /* Light brown color on hover */
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Gallery styling */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-items: center;
+        }
+
+        .gallery img {
+            width: 100%; /* Ensure each image takes up full width of its container */
+            height: 100%; /* Ensure each image takes up full height of its container */
+            object-fit: cover; /* Maintain aspect ratio and cover container */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05); /* Zoom effect on hover */
+        }
+
+        /* Keyframe animation for fade-in effect */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Applying animation to elements */
+        .animated {
+            animation: fadeIn 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        
+        <audio controls>
+            <audio hidden="true" controls autoplay>
+                <source type="audio/mp3" src="Audio.mp3.mp3" >
+                <audio>  
+            <
+        </audio>
+        </div>
+    </center>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hobby.html">Hobby</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="life update.html">Life Update</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Gallery</h1>
+        <p>Bits And Pieces.</p>
+    </header>/
+
+    <section class="center animated">
+        <h2>Photos</h2>
+        <div class="gallery">
+            <img src="aina.pic3.jpg" alt="Description of photo 1">
+            <img src="aina.pic2.jpg" alt="Description of photo 2">
+            <img src="gallery img 5.jpg" alt="Description of photo 3">
+            <img src="gallery img 7.jpg" alt="Description of photo 4">
+            <img src="gallery.img 1.jpg" alt="Description of photo 5">
+            <img src="aina.image.jpg" alt="Description of photo 6">
+            <img src="gallery img 2.jpg" alt="Description of photo 7">
+            <img src="gallery img 3.jpg" alt="Description of photo 8">
+            <img src="gallery img 4.jpg" alt="Description of photo 9">
+            <img src="gallery img 8.jpg" alt="Description of photo 10">
+            <img src="gallery img 9.jpg" alt="Description of photo 11">
+            <img src="gallery img 10.jpg" alt="Description of photo 12">
+            <img src="img 13.jpg" alt="Description of photo 13">
+            <img src="img 14.jpg" alt="Description of photo 14">
+            <img src="img 15.jpg" alt="Description of photo 15">
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024, Aina Afrina. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
